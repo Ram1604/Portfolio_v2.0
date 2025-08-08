@@ -75,6 +75,101 @@ header {
     display: none !important;
 }
 
+
+/* ==== 1st page ====*/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 19%;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6c63ff;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-text h1 span {
+    color: #6c63ff;
+}
+
+.hero-text h3 {
+    font-size: 1.9rem;
+    color: balck;
+    margin-top: 10px;
+    font-family: "Vast Shadow", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #777;
+    margin: 20px 0;
+    line-height: 1.6;
+    max-width: 400px;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.scroll-down {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #6c63ff;
+}
+
+.hero-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-bg {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #6c63ff;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero-image img {
+    position: relative;
+    width: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
 /* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
     .hamburger {
@@ -108,5 +203,18 @@ header {
 
     .logo {
         font-size: 1.5rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-bottom: 20px;
     }
 }
