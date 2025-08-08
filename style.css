@@ -155,8 +155,8 @@ header {
 
 .image-bg {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     background: #6c63ff;
     border-radius: 50%;
     z-index: 0;
@@ -164,7 +164,7 @@ header {
 
 .hero-image img {
     position: relative;
-    width: 230px;
+    width: 340px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
