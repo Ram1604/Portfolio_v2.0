@@ -95,7 +95,7 @@ header {
     .nav-links {
         flex-direction: column;
         padding: 10px;
-
+        gap: 5px;
     }
 
     .nav-links li {
