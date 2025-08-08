@@ -71,6 +71,10 @@ header {
     cursor: pointer;
 }
 
+.hamburger.hide {
+    display: none !important;
+}
+
 /* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
     .hamburger {
