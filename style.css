@@ -205,8 +205,14 @@ header {
         font-size: 1.5rem;
     }
 
+    /* Hero section mobile adjustments */
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* text first, image second */
+        padding: 40px 10%; /* less padding for mobile */
+        gap: 20px; /* space between text and image */
+    }
+
+    .hero-text {
         text-align: center;
     }
 
@@ -215,6 +221,15 @@ header {
     }
 
     .hero-image {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .image-bg {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-image img {
+        width: 210px;
     }
 }
