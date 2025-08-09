@@ -1,5 +1,7 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
+const header = document.querySelector('header');
+const headerOffset = header.offsetHeight; // auto-detect height
 
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
@@ -31,13 +33,8 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        const headerOffset = 100; // height of header
         const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
-
-        // Check if target is above current scroll position (scrolling up)
-        const offsetPosition = (elementPosition < window.pageYOffset)
-            ? elementPosition - headerOffset // scrolling up
-            : elementPosition; // scrolling down
+        const offsetPosition = elementPosition - headerOffset; // always subtract header height
 
         window.scrollTo({
             top: offsetPosition,
