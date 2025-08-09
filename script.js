@@ -56,3 +56,16 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 skillCards.forEach(card => observer.observe(card));
+
+
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+const observerExp = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.3 });
+
+timelineItems.forEach(item => observerExp.observe(item));

@@ -340,6 +340,115 @@ header {
     transform: translateY(0);
 }
 
+.experience {
+    background-color: #2a2a2a;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    gap: 90px;
+    padding-top: 310px;
+    padding-bottom: 240px;
+    padding-left: 20%;
+    padding-right: 25%;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(#6c63ff, #333);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+    padding-left: 100px;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -8px;
+    background: #6c63ff;
+    border-radius: 50%;
+    padding: 1px;
+    border: 3px solid #6c63ff;
+}
+
+.timeline-icon img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: #1f1f1f;
+    padding:10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    border: 1px solid #444;
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+}
+
+.timeline-content p {
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+}
+
+.timeline-content h3 {
+    margin-bottom: 5px;
+    color: #6c63ff;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+}
+
+.timeline-content .date {
+    font-size: 0.9rem;
+    color: #aaa;
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+}
 
 
 /* Mobile Responsive */
