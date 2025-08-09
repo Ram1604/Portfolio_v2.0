@@ -235,6 +235,110 @@ header {
     background-color: #2a2a2a;
 }
 
+.skills {
+    padding: 120px 10%;
+    background-color: #333;
+}
+
+.section-title {
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #6c63ff;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #6c63ff;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.skill-category {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #6c63ff;
+}
+
+.skill-category h3 {
+    font-size: 1.3rem;
+    color: #6c63ff;
+    margin-bottom: 15px;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+}
+
+.skill-items span {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #ccc;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+}
+
+.skill-items img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+
+.skill-category {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.skill-category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 

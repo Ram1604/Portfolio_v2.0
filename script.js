@@ -45,3 +45,14 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
         });
     });
 });
+
+const skillCards = document.querySelectorAll('.skill-category');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.2 });
+
+skillCards.forEach(card => observer.observe(card));
