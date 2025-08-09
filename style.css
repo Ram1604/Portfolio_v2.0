@@ -346,6 +346,9 @@ header {
     transform: translateY(0);
 }
 
+/* ===== Experience Section ===== */
+
+
 .experience {
     background-color: #2a2a2a;
     color: #ccc;
@@ -358,6 +361,8 @@ header {
     padding-bottom: 240px;
     padding-left: 20%;
     padding-right: 25%;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 .timeline {
@@ -521,6 +526,14 @@ header {
         gap: 20px; /* space between text and image */
     }
 
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1.5rem;
+    }
+
     .hero-text {
         text-align: center;
     }
@@ -596,6 +609,39 @@ header {
     .skill-items img {
         width: 23px;
         height: 23px;
+    }
+
+    .experience {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 260px;
+        padding-top: 15px;
+    }
+
+    .timeline {
+        padding-left: 45px;
+    }
+
+    .timeline-item {
+        padding-left: 70px;
+    }
+
+    .timeline-icon {
+        border-radius: 50%;
+    }
+
+    .timeline-icon img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+
+    .timeline-content p {
+        font-size: 20px;
     }
 }
 
