@@ -26,3 +26,22 @@ document.addEventListener('click', (event) => {
         hamburger.classList.remove('hide');
     }
 });
+
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const headerOffset = 100; // height of header
+        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+
+        // Check if target is above current scroll position (scrolling up)
+        const offsetPosition = (elementPosition < window.pageYOffset)
+            ? elementPosition - headerOffset // scrolling up
+            : elementPosition; // scrolling down
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
