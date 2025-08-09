@@ -66,3 +66,7 @@ const observerExp = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 
 timelineItems.forEach(item => observerExp.observe(item));
+
+
+const achievementCards = document.querySelectorAll('.achievement-card');
+achievementCards.forEach(card => observer.observe(card));
