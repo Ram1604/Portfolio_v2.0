@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #333;
 }
 
 body {
     font-family: Arial, sans-serif;
+    
 }
 
 /* ===== Navbar General Styles ===== */
@@ -14,10 +14,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #333;
 }
 
 .logo {
@@ -33,7 +37,6 @@ header {
      "CRSV" 0.5,
      "ELSH" 0,
      "ELXP" 0;
-
 }
 
 .nav-links {
@@ -82,7 +85,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 150px 19%;
+    padding-top: 173px;
+    padding-bottom: 173px;
+    padding-left: 19%;
+    padding-right: 19%;
+    background-color: #333;
 }
 
 .hero-text {
@@ -113,7 +120,7 @@ header {
 
 .hero-text p {
     font-size: 1rem;
-    color: #777;
+    color: #ccc;
     margin: 20px 0;
     line-height: 1.6;
     max-width: 400px;
@@ -168,6 +175,86 @@ header {
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
+}
+
+/* ===== About Section ===== */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 237px 19%;
+    background-color: #2a2a2a; /* subtle difference from hero background */
+    gap: 90px;
+    padding-top: 247px;
+    padding-bottom: 190px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.about-image img {
+    width: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6c63ff;
+    
+}
+
+.about-text {
+    flex: 1;
+    color: #ddd;
+    font-family: "Bitcount Single", system-ui;
+    background-color: #2a2a2a;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #6c63ff;
+    margin-bottom: 20px;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #2a2a2a;
+    font-variation-settings:
+     "slnt" 0,
+     "CRSV" 0.5,
+     "ELSH" 0,
+     "ELXP" 0;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    background-color: #2a2a2a;
+}
+
+.about-text .cert {
+    color: #6c63ff;
+    background-color: #2a2a2a;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 10%;
+    }
+
+    .about-image img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
 }
 
 /* ===== Mobile Styles ===== */
