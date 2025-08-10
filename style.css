@@ -17,7 +17,7 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -85,7 +85,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 173px;
+    padding-top: 13px;
     padding-bottom: 160px;
     padding-left: 19%;
     padding-right: 19%;
@@ -633,7 +633,6 @@ header {
         font-size: 1rem;
     }
 }
-
 
 
 /* ===== Mobile Styles ===== */
