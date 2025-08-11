@@ -9,6 +9,72 @@ body {
     
 }
 
+.hero,
+.about,
+.skills,
+.experience,
+.achievements,
+.contact {
+    padding-top: 60px; /* smaller consistent padding */
+    padding-bottom: 60px;
+}
+
+section {
+    margin: 0;
+}
+
+.hero,
+.about,
+.skills,
+.experience,
+.achievements,
+.contact {
+    background-clip: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 80px; /* same as navbar height */
+}
+
+
+
+/* ===== Social Icons in Navbar ===== */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 60px;
+    top: 420px;
+    transform: translateY(-50%);
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #444;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 0 12px #6c63ff;
+}
+
+
 /* ===== Navbar General Styles ===== */
 header {
     display: flex;
