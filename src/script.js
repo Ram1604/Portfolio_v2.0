@@ -70,3 +70,34 @@ timelineItems.forEach(item => observerExp.observe(item));
 
 const achievementCards = document.querySelectorAll('.achievement-card');
 achievementCards.forEach(card => observer.observe(card));
+
+
+const mainContent = document.querySelector('.main-content');
+const menuLinks = document.querySelectorAll('#nav-menu a');
+
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // your existing menu toggle
+    mainContent.classList.toggle('blur'); // apply/remove blur
+});
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        // Close menu immediately
+        navMenu.classList.remove('active');
+
+        // Get position with offset
+        const yOffset = -90; // navbar height
+        const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
+
+        setTimeout(() => {
+            mainContent.classList.remove('blur');
+        }, 600);
+    });
+});

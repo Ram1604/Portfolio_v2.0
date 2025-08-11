@@ -144,6 +144,25 @@ header {
     display: none !important;
 }
 
+/* Initial state */
+.main-content {
+    transition: filter 0.3s ease;
+}
+
+/* Blur when menu is active */
+.main-content.blur {
+    filter: blur(6px);
+}
+
+/* Optional: also dim background */
+.main-content.blur::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 5;
+}
+
 
 /*  Home page*/
 
@@ -887,4 +906,12 @@ header {
         right: 25px;
 
     }
+
+    @media (max-width: 768px) {
+    .main-content.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+ }
+}
+
 }
