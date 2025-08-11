@@ -881,4 +881,10 @@ header {
     .achievement-note {
         margin-top: 10px;
     }
+    .social-icons {
+        gap: 15px;
+        top: 310px;
+        right: 25px;
+
+    }
 }
