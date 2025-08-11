@@ -15,7 +15,7 @@ body {
 .experience,
 .achievements,
 .contact {
-    padding-top: 60px; /* smaller consistent padding */
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -37,12 +37,12 @@ html {
 }
 
 :target {
-    scroll-margin-top: 80px; /* same as navbar height */
+    scroll-margin-top: 80px;
 }
 
 
 
-/* ===== Social Icons in Navbar ===== */
+/*  Social Icons in Navbar */
 .social-icons {
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ html {
 }
 
 
-/* ===== Navbar General Styles ===== */
+/*  Navbar General Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -133,7 +133,7 @@ header {
     color: #6c63ff;
 }
 
-/* ===== Hamburger Icon ===== */
+/*  Hamburger Icon */
 .hamburger {
     display: none;
     font-size: 1.8rem;
@@ -145,7 +145,7 @@ header {
 }
 
 
-/* ==== 1st page ====*/
+/*  Home page*/
 
 .hero {
     display: flex;
@@ -245,13 +245,13 @@ header {
     z-index: 1;
 }
 
-/* ===== About Section ===== */
+/*  About Section  */
 
 .about {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2a2a2a; /* subtle difference from hero background */
+    background-color: #2a2a2a;
     gap: 90px;
     padding-top: 30px;
     padding-bottom: 190px;
@@ -304,7 +304,7 @@ header {
     background-color: #2a2a2a;
 }
 
-/* ===== Skill Section ===== */
+/*  Skill Section  */
 
 .skills {
     padding-top: 10px;
@@ -417,7 +417,7 @@ header {
     transform: translateY(0);
 }
 
-/* ===== Experience Section ===== */
+/*  Experience Section  */
 
 
 .experience {
@@ -537,7 +537,7 @@ header {
      "ELXP" 0;
 }
 
-/* ===== Achievements Section ===== */
+/*  Achievements Section  */
 
 
 .achievements {
@@ -620,7 +620,7 @@ header {
     color:#6c63ff;
 }
 
-/* ===== Contact Section ===== */
+/*  Contact Section  */
 
 .contact {
     background-color: #2a2a2a;
@@ -701,7 +701,7 @@ header {
 }
 
 
-/* ===== Mobile Styles ===== */
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -738,9 +738,9 @@ header {
 
     /* Hero section mobile adjustments */
     .hero {
-        flex-direction: column-reverse; /* text first, image second */
-        padding: 40px 10%; /* less padding for mobile */
-        gap: 20px; /* space between text and image */
+        flex-direction: column-reverse; 
+        padding: 40px 10%; 
+        gap: 20px; 
     }
 
     .hero-text h1 {
