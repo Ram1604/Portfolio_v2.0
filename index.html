@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">Hello World!</div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+
+    <!-- Home Section -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Hi, I'm Ramesh</h1>
+        <h3>Cloud Engineer</h3>
+        <p>
+            [ My job is to break the cloud, fix the cloud, and then tell people it was 'scheduled maintenance' ]
+        </p>
+        <div class="scroll-down">
+            <span>⬇ Scroll down</span>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="image-bg"></div>
+        <img src="./assets/gif1.gif" alt="img1">
+    </div>
+
+    <!-- Social Icons -->
+     <div class="social-icons">
+        <a href="https://github.com/Ram1604" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/rameshsudhan/" target="_blank"><img src="./assets/linkedin1.png" alt="LinkedIn"></a>
+        <a href="mailto:rameshsudhan11@gmail.com"><img src="./assets/gmail1.png" alt="Email"></a>
+    </div>
+</section>
+
+<!--  About Section -->
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="./assets/badge.png" alt="About Me">
+    </div>
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+            Cloud Engineer with 2+ years of experience across GCP, AWS, and Azure. 
+            <span class="cert">Certified Google Cloud Associate Cloud Engineer.</span>
+            Skilled in Terraform, CI/CD automation, and building secure, scalable solutions. 
+            Passionate about optimizing cost, performance, and reliability in the cloud.
+        </p>
+    </div>
+</section>
+
+<!--  Skills Section -->
+
+<section class="skills" id="skills">
+    <h2 class="section-title">⚡ Skills</h2>
+    <div class="skills-grid">
+
+        <div class="skill-category">
+            <h3>☁ Cloud Platforms</h3>
+            <div class="skill-items">
+                <span><img src="./assets/gcp.png" alt="GCP">Google Cloud Platform</span>
+                <span><img src="./assets/azure.png" alt="Azure">Azure</span>
+                <span><img src="./assets/aws.png" alt="AWS">Amazon Web Services</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>⚙ DevOps & Automation</h3>
+            <div class="skill-items">
+                <span><img src="./assets/git.png" alt="Git">Git</span>
+                <span><img src="./assets/docker.png" alt="Docker">Docker</span>
+                <span><img src="./assets/kubernetes.png" alt="Kubernetes">Kubernetes</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3> ☕︎ Programming & Scripting</h3>
+            <div class="skill-items">
+                <span><img src="./assets/python.png" alt="Python">Python</span>
+                <span><img src="./assets/bash.png" alt="Bash">Bash</span>
+                <span><img src="./assets/sql.png" alt="SQL">SQL</span>
+
+            </div>
+        </div>
+
+        <div class="skill-category" id="sk">
+            <h3>🛠 Infrastructure as Code</h3>
+            <div class="skill-items">
+                <span><img src="./assets/terraform.png" alt="Terraform">Terraform</span>
+            </div>
+        </div>
+
+        <div class="skill-category" id="sk">
+            <h3>𝄃𝄃𝄂 Loading...</h3>
+        </div>
+
+    </div>
+</section>
+
+<!--  Experience Section -->
+
+<section class="experience" id="experience">
+    <h2 class="section-title">🚀 Experience</h2>
+
+    <div class="timeline">
+        <!-- First Job -->
+        <div class="timeline-item">
+            <div class="timeline-icon">
+                <img src="./assets/img.png" alt="Ingram Micro Logo">
+            </div>
+            <div class="timeline-content">
+                <h3>Ingram Micro Platform Technology</h3>
+                <span class="date">July 2023 - Present</span>
+                <p>
+                    Cloud Engineer
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  Achievements Section -->
+
+<section class="achievements" id="achievements">
+    <h2 class="section-title">🏆 Achievements</h2>
+    
+    <p class="achievement-note">
+        <span>Open-source contributor</span> to the <span>Terraform Google Cloud Pub/Sub Module</span>, improving infrastructure-as-code for the global community.
+    </p>
+
+    <div class="achievements-grid">
+        <div class="achievement-card">
+            <h3>PR 1 🔐</a></h3>
+            <p>Enabled Principle of Least Privilege by making project-level roles/storage.admin optional via a configuration flag.<a href="https://github.com/terraform-google-modules/terraform-google-pubsub/pull/255">[PR255]</a></p>
+        </div>
+
+        <div class="achievement-card">
+            <h3>PR 2 🛠️</h3>
+            <p>Enhanced push subscriptions with <b>no-wrapper</b> & <b>write-metadata</b> support for better message & metadata control.<a href="https://github.com/terraform-google-modules/terraform-google-pubsub/pull/249">[PR249]</a></p>
+        </div>
+
+        <div class="achievement-card">
+            <h3>PR 3 ♻️</h3>
+            <p>Enabled dead-lettering in Cloud Storage & BigQuery subscriptions by adding max_delivery_attempts support.<a href="https://github.com/terraform-google-modules/terraform-google-pubsub/pull/238">[PR238]</a></p>
+        </div>
+    </div>
+</section>
+
+<!--  Contact Section -->
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Find me here</h2>
+    
+    <div class="contact-grid">
+        <!-- GitHub -->
+        <a href="https://github.com/Ram1604" target="_blank" class="contact-card">
+            <img src="./assets/github.png" alt="GitHub">
+            <span>GitHub</span>
+        </a>
+        
+        <!-- Email -->
+        <a href="mailto:rameshsudhan11@gmail.com" class="contact-card">
+            <img src="./assets/gmail.png" alt="Email">
+            <span>Email</span>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/rameshsudhan/" target="_blank" class="contact-card">
+            <img src="./assets/linkedin.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+        </a>
+
+        <!-- Resume -->
+        <a href="./assets/Resume-1.pdf" target="_blank" class="contact-card">
+            <img src="./assets/resume.png" alt="Resume">
+            <span>Resume</span>
+        </a>
+    </div>
+
+    <p class="sarcasm">
+        “ Currently available… until the cloud goes down ”
+    </p>
+</section>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
